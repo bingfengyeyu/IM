@@ -1,0 +1,50 @@
+.crap{
+    width: 300px;
+    height: 300px;
+    background: #ec7404;
+    position: fixed;
+    top: calc(50%-250px);
+    left: calc(50%-250px);
+}
+.crap .eyes{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    background: #ffffff;
+    
+
+}
+.crap .eyes.left{
+   left: 20px;
+
+}
+.crap .eyes.right{
+   right: 20px;
+
+}
+.crap .eyes .point{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    position: absolute;
+    background: #000;
+    top: 20px;
+    left: 20px;
+}
+.mouth{
+    width: 180px;
+    height: 60px;
+    position: absolute;
+    background: #ebebeb;
+    top: 190px;
+    left: 60px;
+}
+.tangen{
+    width: 20px;
+    height: 50px;
+    position: absolute;
+    background: red;
+    top: 10px;
+    left: 60px;
+}
