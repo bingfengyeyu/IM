@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(3, 3, 3);
+}
+.login-wrap{
+    --w: 400px;
+    --h: 390px;
+    position: fixed;
+    width: var(--w);
+    height: var(--h);
+    background: #fff;
+    /* 置中 */
+    left: calc(50% - (var(--w) / 2));
+    /* 置中 */
+    top: calc(50% - (var(--h) / 2));
+    border-radius: 4px;
+    z-index: 2;
+    
+}
