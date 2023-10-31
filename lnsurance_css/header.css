@@ -1,27 +1,121 @@
-.header{
-    color: #dedede;
-    height: 60px;
-    background: #000;
-    font-size: 20px;
-    justify-content: space-between;
-    display: flex;
+body{
+    background: rgb(245, 245, 245);
 }
 
-.contion{
+
+.header {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    z-index: 3;
+}
+
+.header-row {
+    background: #fff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.header-row .menu ul {
+    display: flex;
+    gap: 20px;
+    
+}
+
+.header-row .menu li {
+    text-align: center;
+}
+
+.header-row .menu li :hover{
+    color: red;
+}
+
+.header-row .menu .en {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.header-row .menu .zh {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+
+.page {
+    height: 100vh;
+}
+
+.p-1{
+    background: rgb(58, 58, 58);
+    background-image: url(../lnsurance_image/image/banner.jpeg);
+    background-size: cover;
+    position: relative;
+}
+.p-1::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.178);
+}
+.p-1 .page-position{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.p-1 .page-row {
+    background: rgba(14, 50, 80, 0.9);
+    width: 100%;
+    display: flex;
+    color: #fff;
+    border-radius: 10px;
+    min-height: 300px;
+}
+
+.p-1 .page-row>div{
+    width: 50%;
     padding: 20px;
 }
 
-li{
-    display:inline ;
-    margin: 20px;
+
+.slogan {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.slogan::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 140px);
+    width: 0;
+    height: 3px;
+    border-left: solid 100px #1072c2;
+    border-right: solid 180px #fff;
 }
 
-.main{
-    width: 300px;
-    height: 300px;
-    background: #ec7404;
-    position: absolute;
-    top: calc(50%-250px);
-    left: calc(50%-250px);
-    
+
+
+.footer{
+    background: #dedede;
+    font-size: 16px;
+}
+.footer-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.copyright{
+    font-size:0.9rem ;
 }
