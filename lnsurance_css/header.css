@@ -140,6 +140,7 @@ body{
     border-radius: 6px;
     cursor: pointer;
     transition: 0.4s;
+    
 }
 
 .form-button button:hover {
