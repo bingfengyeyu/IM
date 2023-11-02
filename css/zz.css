@@ -1,0 +1,38 @@
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.header-wrap{
+    display: flex;
+    gap: 10px;
+}
+
+.header-wrap .right-side{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.buttons ul{
+    display: flex;
+    gap: 10px;
+}
+
+.buttons ul a{
+    display: block;
+    padding: 20px 15px;
+    background-color: #c9c5c5;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: 0.4s;
+    font-size: 1.2rem;
+    
+}
+.buttons ul a:hover,.buttons ul li.action{
+    color: blue;
+}
