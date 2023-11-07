@@ -1,7 +1,24 @@
 *,
 *::after,
 *::before{
-    padding: 0px;
-    margin: 0px;
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style-type: none;
+}
+.container{
+    max-width: 800px;
+    height: 100%;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
 }

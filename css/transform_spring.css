@@ -1,0 +1,17 @@
+.spring {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color:  #fff;
+    font-size: 20px;
+    font-weight: 800;
+    transform: rotate(135deg);
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spring .text {
+    transform: rotate(45deg);
+}
