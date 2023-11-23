@@ -83,7 +83,7 @@ img {
 
 .prouduct-information-text {
     flex: 1;
-    padding: 20px;
+    padding: 0 20px;
 }
 
 .category-nav {
@@ -107,7 +107,7 @@ img {
 
 .product-process {
     display: flex;
-
+    gap: 20px;
 }
 
 .goal-product {
@@ -181,4 +181,26 @@ hr.line{
     gap: 5px;
     align-items: center;
     justify-content: center;
+}
+.main-nav-block {
+    background-color: #f9fafb;
+    height: 60px;
+}
+.main-nav-wrap{
+        height: 100%;
+        display: flex;
+        align-items: center;
+}
+.main-nav-wrap .page-tab {
+    flex: 2;
+}
+
+.page-tab .tabs {
+    display: flex;
+    gap: 15px;
+}
+
+
+.main-nav-wrap .donate-wrap {
+    flex: 1;
 }
