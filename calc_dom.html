@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/calc.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>四則運算初體驗</h1>
+        <div>
+            <label for="calc-num-1">數字1</label>
+            <input type="number" id="calc-num-1" placeholder="請輸入數字" min="0">
+        </div>
+        <div>
+            <label for="calc-type">運算方式</label>
+            <select id="calc-type">
+                <option value="">請選擇算法</option>
+                <option value="add">加法</option>
+                <option value="sub">減法</option>
+                <option value="mul">乘法</option>
+                <option value="div">除法</option>
+            </select>
+        </div>
+        <div>
+            <label for="calc-num-2">數字2</label>
+            <input type="number" id="calc-num-2" placeholder="請輸入數字" min="0">
+        </div>
+        <div class="fn">
+            <button class="btn" id="calc-btn">計算</button>
+        </div>
+        <div id="response"></div>
+    </div>
+    </div>
+</body>
+<script src="/js/calc_dom.js"></script>
+
+</html>
