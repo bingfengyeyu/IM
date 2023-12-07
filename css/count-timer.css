@@ -1,0 +1,32 @@
+.count-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.cc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+.count-item{
+    width: 150px;
+    height: 150px;
+    border: 5px solid #23ca7c;
+    border-radius: 8px;
+    color: #23ca7c;
+    display: flex;
+    position: relative;
+    font-size: 4rem;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+}
+.countdown-unit {
+    position: absolute;
+    bottom: 10px;
+    font-size: 1.2rem;
+    text-transform: uppercase;/*字母轉大寫*/
+}
