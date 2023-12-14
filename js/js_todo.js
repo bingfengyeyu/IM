@@ -10,7 +10,7 @@ if (uid) {
     let elInput = document.querySelector('#todo-in');
     let elAddBtn = document.querySelector('#todo-add-btn');
     let elItem = document.querySelector('#todo-item');
-    let elchangeUid=document.querySelector('#change-uid-btn');
+    let elChangeUid = document.querySelector('#change-uid-btn');
     let todo = new TODO(elItem);
 
     const addTodo = () => {
