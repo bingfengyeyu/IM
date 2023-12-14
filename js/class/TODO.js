@@ -5,10 +5,10 @@ class TODO {
     #el
     #storage
 
-    constructor(el) {
+    constructor(el ,uid='todo') {
         this.#items = [];
         this.#el = el;
-        this.#storage = new LocalStorage('todo');
+        this.#storage = new LocalStorage('uid');
         this.init();
     }
 
@@ -65,6 +65,17 @@ class TODO {
             }
         })
     }
+    // dragAndDrop(){
+    //     this.#el.addEventListener('dragstart',(e)=>{
+    //         let data = {index:e.target.dataset.index,type:'pending'};
+    //         e.dataTransfer.setData('text',JOSN.stringify(daya));
+    //     })
+    //     let aa = document.querySelector('#aa');
+
+    //     aa.addEventListener('dragover',(e)=>{
+    //         e.preventDefault();/*取消預設*/
+    //     })
+    // }
 }
 
 export { TODO }

@@ -4,11 +4,13 @@ import { UID } from './class/UID.js';
 let uid = UID.read();
 
 
-if (!uid) {
+if (uid) {
+    todoApp.classList.add('active');
     // TODO Application.
     let elInput = document.querySelector('#todo-in');
     let elAddBtn = document.querySelector('#todo-add-btn');
     let elItem = document.querySelector('#todo-item');
+    let elchangeUid=document.querySelector('#change-uid-btn');
     let todo = new TODO(elItem);
 
     const addTodo = () => {
@@ -35,8 +37,22 @@ if (!uid) {
             addTodo();
         }
     })
-} else {
-    // Show Input uid.
-    console.log('Not Set UID.')
+    elChangeUid.addEventListener('click', (e) => {
+        e.preventDefault();
+        UID.clear();
+        location.reload();
+    })
 
+} else {
+    uidApp.classList.add('active');
+
+    let elUid = document.querySelector('#todo-uid');
+    let elBtn = document.querySelector('#todo-uid-btn');
+    elBtn.addEventListener('click', (e) => {
+        let value = elUid.value;
+        if (value) {
+            UID.write(value);
+            location.reload();
+        }
+    })
 }
