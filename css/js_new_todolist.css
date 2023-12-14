@@ -73,16 +73,13 @@
   text-decoration: line-through;/*刪除線*/
 }
 
-.tabs{
-    display: none;
-}
-
-.tabs.active{
-    display: block;
-}
-
 .fn{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+/* .tabs{
+    display: none;
+} */
+

@@ -5,23 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TODO List</title>
+    <title>New TODO List</title>
     <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/js_todolist.css">
+    <link rel="stylesheet" href="/css/js_new_todolist.css">
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" >
         <div class="tabs" id="todo-app">
             <div class="fn">
                 <h1>TODO LIST</h1>
-                <div class="todo-input">
-                    <input type="text" id="todo-in">
-                    <button id="todo-add-btn">新增</button>
-                </div>
                 <div>
-                    <a href="#">登出</a>
+                    <a href="#" id="change-uid-btn">登出</a>
                 </div>
+            </div>
+            <div class="todo-input">
+                <input type="text" id="todo-in">
+                <button id="todo-add-btn">新增</button>
             </div>
             <hr>
             <div class="todo-item-wrap">
@@ -32,11 +32,13 @@
                 </li> -->
                 </ul>
             </div>
-        </div>
-        <h1>UID</h1>
-        <div class="todo-input">
-            <input type="text" id="UID-in">
-            <button id="UID-add-btn">新增</button>
+        </div>   
+        <div class="tabs" id="uid-app"> 
+            <h1>UID</h1>
+            <div class="todo-input">
+                <input type="text" id="UID-in">
+                <button id="UID-add-btn">確認</button>
+            </div>
         </div>
     </div>
 </body>
