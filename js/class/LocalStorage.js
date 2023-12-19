@@ -1,5 +1,5 @@
 class LocalStorage {
-    #uid
+    #uid;
 
     constructor(uid) {
         this.#uid = uid
@@ -33,4 +33,4 @@ class LocalStorage {
     }
 }
 
-export{LocalStorage}
+export { LocalStorage }

@@ -15,13 +15,13 @@
         <div class="tabs" id="todo-app">
             <div class="fn">
                 <h1>TODO LIST</h1>
-                <div class="todo-input">
-                    <input type="text" id="todo-in">
-                    <button id="todo-add-btn">新增</button>
-                </div>
                 <div>
-                    <a href="#">登出</a>
+                    <a href="#" id="change-uid-btn">登出</a>
                 </div>
+            </div>
+            <div class="todo-input">
+                <input type="text" id="todo-in">
+                <button id="todo-add-btn">新增</button>
             </div>
             <hr>
             <div class="todo-item-wrap">
@@ -33,12 +33,25 @@
                 </ul>
             </div>
         </div>
-        <h1>UID</h1>
-        <div class="todo-input">
-            <input type="text" id="UID-in">
-            <button id="UID-add-btn">新增</button>
+
+        <div class="tabs" id="uid-app">
+            <h1>請輸入 UID</h1>
+            <div class="todo-input">
+                <input type="text" id="todo-uid">
+                <button id="todo-uid-btn">確認</button>
+            </div>
         </div>
-    </div>
+
+        <!-- <div>
+            <input type="file" id="upload-file" accept="image/*" />
+        </div>
+        <div>
+            <button id="do-upload">upload file</button>
+        </div>
+        <div>
+            <img src="" alt="" id="preview">
+        </div>
+    </div> -->
 </body>
 <script type="module" src="/js/js_todo.js"></script>
 

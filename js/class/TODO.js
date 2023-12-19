@@ -5,10 +5,10 @@ class TODO {
     #el
     #storage
 
-    constructor(el ,uid='todo') {
+    constructor(el, uid = 'todo') {
         this.#items = [];
         this.#el = el;
-        this.#storage = new LocalStorage('uid');
+        this.#storage = new LocalStorage(uid);
         this.init();
     }
 
@@ -40,7 +40,7 @@ class TODO {
         this.#items.forEach((item, index) => {
             let checked = item.checked ? 'checked' : '';
 
-            html += `<li data-index="${index}">
+            html += `<li data-index="${index}" draggable="true">
                         <input type="checkbox" ${checked}>
                         <span>${item.text}</span>
                     </li>`
@@ -64,18 +64,30 @@ class TODO {
                 this.checkedToggle(index);
             }
         })
-    }
-    // dragAndDrop(){
-    //     this.#el.addEventListener('dragstart',(e)=>{
-    //         let data = {index:e.target.dataset.index,type:'pending'};
-    //         e.dataTransfer.setData('text',JOSN.stringify(daya));
-    //     })
-    //     let aa = document.querySelector('#aa');
 
-    //     aa.addEventListener('dragover',(e)=>{
-    //         e.preventDefault();/*取消預設*/
-    //     })
-    // }
+
+
+    }
+
+    dragAndDrop() {
+        this.#el.addEventListener('dragstart', (e) => {
+            let data = { index: e.target.dataset.index, type: 'pending' };
+            e.dataTransfer.setData('text', JSON.stringify(data));
+        })
+
+        let aa = document.querySelector('#aa');
+
+        aa.addEventListener('dragover', (e) => {
+            e.preventDefault();
+
+        })
+
+        aa.addEventListener('drop', (e) => {
+            console.log(e);
+            let data = JSON.parse(e.dataTransfer.getData('text'))
+            console.log(data);
+        })
+    }
 }
 
 export { TODO }

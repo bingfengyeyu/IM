@@ -1,20 +1,17 @@
-class UID{
+class UID {
+    static #key = 'todo_uid';
 
-    static#key = 'todo_uid';
-    static read(){
-        return localStorage.getItem(this.key)
+    static read() {
+        return localStorage.getItem(this.#key)
     }
-    static write(){
+
+    static write(uid) {
         localStorage.setItem(this.#key, uid)
     }
-    static clear(){
+
+    static clear() {
         localStorage.removeItem(this.#key)
     }
-
-
-
-
 }
 
-
-export {UID};
+export { UID }
