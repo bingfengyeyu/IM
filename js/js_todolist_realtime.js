@@ -62,25 +62,25 @@ const authed = (user) =>{
         UID.clear();
         location.reload();
     })
-}
+
 
 
     let elCurentUid = document.querySelector('#current-uid');
-    elCurentUid.innerHTML = uid
-
+    elCurentUid.innerHTML = uid;
+}
     const unauthed = () =>{
 
     uidApp.classList.add('active');
 
-    let elUid = document.querySelector('#todo-uid');
-    let elBtn = document.querySelector('#todo-uid-btn');
-    elBtn.addEventListener('click', (e) => {
-        let value = elUid.value;
-        if (value) {
+    // let elUid = document.querySelector('#todo-uid');
+    // let elBtn = document.querySelector('#todo-uid-btn');
+    // elBtn.addEventListener('click', (e) => {
+    //     let value = elUid.value;
+    //     if (value) {
            
-            location.reload();
-        }
-    })
+    //         location.reload();
+    //     }
+    // })
 }
 
 auth.onChange(authed, unauthed);
