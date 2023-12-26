@@ -2,6 +2,7 @@ import { TodoRealtime } from './class/TodoRealtime.js';
 // import { UID } from './class/UID.js';
 import { App } from './Firebase/App.js';
 import { Auth } from './Firebase/Auth.js';
+import { Database } from './Firebase/Database.js';
 
 const app = await App.init();
 const auth = new Auth(app);
@@ -63,6 +64,8 @@ const authed = (user) => {
 }
 
 const unauthed = () => {
+    const db = new Database(app);
+    db.write('todo/wEsAC6AV1rgCUh8BDe4dccONSuf2', [{ text: '我是入侵者', checked: false }]) /*利用無登入方式修改檔案*/
     uidApp.classList.add('active');
     let elAccount = document.querySelector('#todo-account');
     let elPassword = document.querySelector('#todo-password');
