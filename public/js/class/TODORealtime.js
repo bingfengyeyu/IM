@@ -1,7 +1,7 @@
 import { App } from '../Firebase/App.js'
 import { Database } from '../Firebase/Database.js'
 
-class TodoRealtime {
+class TODORealtime {
     #items
     #el
     #uid
@@ -15,7 +15,7 @@ class TodoRealtime {
     }
 
     add(text) {
-       
+
         if (text) {
             this.#items.push({ checked: false, text: text })
         }
@@ -117,4 +117,4 @@ class TodoRealtime {
     }
 }
 
-export { TodoRealtime }
+export { TODORealtime }

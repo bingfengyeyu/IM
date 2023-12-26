@@ -1,4 +1,4 @@
-import { TodoRealtime } from './class/TodoRealtime.js';
+import { TODORealtime } from './class/TODORealtime.js';
 // import { UID } from './class/UID.js';
 import { App } from './Firebase/App.js';
 import { Auth } from './Firebase/Auth.js';
@@ -25,7 +25,7 @@ const authed = (user) => {
     let elAddBtn = document.querySelector('#todo-add-btn');
     let elItem = document.querySelector('#todo-item');
     let elChangeUid = document.querySelector('#change-uid-btn');
-    let todo = new TodoRealtime(elItem, uid);
+    let todo = new TODORealtime(elItem, uid);
 
     const addTodo = () => {
         let value = elInput.value;
@@ -64,8 +64,8 @@ const authed = (user) => {
 }
 
 const unauthed = () => {
-    const db = new Database(app);
-    db.write('todo/wEsAC6AV1rgCUh8BDe4dccONSuf2', [{ text: '我是入侵者', checked: false }]) /*利用無登入方式修改檔案*/
+    // const db = new Database(app);
+    // db.write('todo/wEsAC6AV1rgCUh8BDe4dccONSuf2', [{ text: '我是入侵者', checked: false }]) /*利用無登入方式修改檔案*/
     uidApp.classList.add('active');
     let elAccount = document.querySelector('#todo-account');
     let elPassword = document.querySelector('#todo-password');
