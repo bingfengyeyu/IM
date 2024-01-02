@@ -6,6 +6,7 @@ import { Database } from './Firebase/Database.js';
 
 const app = await App.init();
 const auth = new Auth(app);
+const db = new Database(app);
 
 let todoApp = document.querySelector('#todo-app');
 let uidApp = document.querySelector('#uid-app');

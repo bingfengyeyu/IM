@@ -39,8 +39,8 @@
     margin-top: 10px;
 }
 
-.todo-input button.linker{
-    background:transparent;
+.todo-input button.linker {
+    background: transparent;
     color: #dedede;
     width: auto;
     height: auto;
@@ -79,19 +79,20 @@
 }
 
 
-#todo-item>li>input[type=checkbox]:checked+span{
-  text-decoration: line-through;/*刪除線*/
+#todo-item>li>input[type=checkbox]:checked+span {
+    text-decoration: line-through;
+    /*刪除線*/
 }
 
-.tabs{
+/* .tabs{
     display: none;
 }
 
 .tabs.active{
     display: block;
-}
+} */
 
-.fn{
+.fn {
     display: flex;
     align-items: center;
     justify-content: space-between;
